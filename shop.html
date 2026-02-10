@@ -6,119 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Sagara Hydraulics</title>
     <meta name="description"
-        content="Browse our wide range of hydraulic products including cylinders, pumps, valves, seals, and power units. High quality industrial parts in Sri Lanka.">
+        content="Browse our catalog of hydraulic cylinders, pumps, valves, and hoses. High quality industrial components availability.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .shop-layout {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .sidebar {
-            background-color: var(--bg-card);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            height: fit-content;
-        }
-
-        .filter-title {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-            color: white;
-        }
-
-        .category-list li {
-            margin-bottom: 10px;
-        }
-
-        .category-list a {
-            display: block;
-            padding: 8px 10px;
-            color: var(--text-gray);
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .category-list a:hover,
-        .category-list a.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .shop-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Sagara <span>Hydraulics</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html" class="active">Shop</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="applications.html">Applications</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/94716803228" class="contact-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> 071 680 3228
-            </a>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="logo-container">
+                <a href="./index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="./applications.html" class="nav-link">Applications</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/94716803228" target="_blank" class="btn btn-whatsapp contact-nav-btn">
+                    <i class="fab fa-whatsapp"></i> 071 680 3228
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="container section-padding">
-        <h1 class="section-title">Our Products</h1>
-
-        <div class="shop-layout">
-            <aside class="sidebar">
-                <h3 class="filter-title">Categories</h3>
-                <ul class="category-list">
-                    <li><a class="category-filter active" data-category="all">All Products</a></li>
-                    <li><a class="category-filter" data-category="cylinders">Hydraulic Cylinders</a></li>
-                    <li><a class="category-filter" data-category="pumps">Hydraulic Pumps</a></li>
-                    <li><a class="category-filter" data-category="valves">Hydraulic Valves</a></li>
-                    <li><a class="category-filter" data-category="seals">Hydraulic Seals</a></li>
-                    <li><a class="category-filter" data-category="power-units">Power Units</a></li>
-                    <li><a class="category-filter" data-category="hoses">Hoses & Fittings</a></li>
-                    <li><a class="category-filter" data-category="custom">Custom Systems</a></li>
-                    <li><a class="category-filter" data-category="parts">Spare Parts</a></li>
-                </ul>
-            </aside>
-
-            <main id="shop-grid" class="product-grid">
-                <!-- Products will be loaded here by JS -->
-            </main>
+    <!-- Shop Hero -->
+    <section class="hero reveal" style="height: 40vh;">
+        <div class="container hero-content">
+            <h1>Our Products</h1>
+            <p>Comprehensive range of hydraulic components for every application.</p>
         </div>
+    </section>
+
+    <!-- Shop Layout -->
+    <div class="container shop-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar reveal">
+            <div class="filter-group">
+                <h3 class="filter-title">Search</h3>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search products..."
+                    style="width: 100%;">
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-title">Categories</h3>
+                <div class="filter-option" onclick="filterByCategory('all')">
+                    <i class="fas fa-th-large" style="width: 20px;"></i> All Products
+                </div>
+                <div class="filter-option" onclick="filterByCategory('cylinders')">
+                    <i class="fas fa-compress-arrows-alt" style="width: 20px;"></i> Cylinders
+                </div>
+                <div class="filter-option" onclick="filterByCategory('pumps')">
+                    <i class="fas fa-cogs" style="width: 20px;"></i> Pumps & Motors
+                </div>
+                <div class="filter-option" onclick="filterByCategory('valves')">
+                    <i class="fas fa-random" style="width: 20px;"></i> Valves
+                </div>
+                <div class="filter-option" onclick="filterByCategory('hoses')">
+                    <i class="fas fa-link" style="width: 20px;"></i> Hoses & Fittings
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-title">Need Help?</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Can't find what you're
+                    looking for?</p>
+                <a href="https://wa.me/94716803228?text=I am looking for a specific hydraulic part..."
+                    class="btn btn-whatsapp" style="width: 100%; justify-content: center;">Ask on WhatsApp</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <div class="sort-bar reveal">
+                <div id="resultCount" style="color: var(--text-muted);">Showing all products</div>
+                <select id="sortSelect" class="search-input" style="width: auto;">
+                    <option value="featured">Featured</option>
+                    <option value="az">Name: A-Z</option>
+                    <option value="za">Name: Z-A</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="shop-grid">
+                <!-- Products loaded via JS -->
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <button class="btn btn-outline" onclick="window.scrollTo(0,0)">Back to Top</button>
+            </div>
+        </main>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sagara Hydraulics. All Rights Reserved.</p>
+        <div class="container reveal">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sagara Hydraulics</h3>
+                    <p style="color: var(--text-muted);">Leading the way in industrial hydraulic solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./applications.html">Applications</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> 071 680 3228
+                        </li>
+                        <li><i class="fab fa-whatsapp" style="color: var(--success); margin-right: 10px;"></i> 071 680
+                            3228</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; <span id="current-year"></span> Sagara Hydraulics. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/products.js"></script>
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Shop specific logic
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentCategory = 'all';
+            let currentSearch = '';
+
+            const grid = document.getElementById('shop-grid');
+            const searchInput = document.getElementById('searchInput');
+            const resultCount = document.getElementById('resultCount');
+
+            function renderProducts() {
+                grid.innerHTML = '';
+                const filtered = filterProducts({ category: currentCategory, search: currentSearch });
+
+                resultCount.textContent = `Showing ${filtered.length} products`;
+
+                if (filtered.length === 0) {
+                    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 40px;">No products found.</p>';
+                    return;
+                }
+
+                filtered.forEach(product => {
+                    const card = document.createElement('div');
+                    card.className = 'product-card reveal active'; // Changed to include active
+                    card.innerHTML = `
+                         <div class="product-img">
+                            <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x220?text=No+Image'">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat">${product.category}</div>
+                            <h3 class="product-title">${product.name}</h3>
+                            <p class="product-desc">${product.description.substring(0, 80)}...</p>
+                            <div style="display: flex; gap: 10px; margin-top: auto;">
+                                <a href="./product.html?id=${product.id}" class="btn btn-primary" style="flex: 1; justify-content: center;">Details</a>
+                                <a href="https://wa.me/94716803228?text=Inquiry about: ${product.name}" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+
+            // Expose filter function globally
+            window.filterByCategory = (cat) => {
+                currentCategory = cat;
+                renderProducts();
+            };
+
+            // Search listener
+            searchInput.addEventListener('input', (e) => {
+                currentSearch = e.target.value;
+                renderProducts();
+            });
+
+            // Initial render
+            renderProducts();
+        });
+    </script>
 </body>
 
 </html>

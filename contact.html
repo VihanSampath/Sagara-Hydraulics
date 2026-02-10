@@ -5,167 +5,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Sagara Hydraulics</title>
-    <meta name="description"
-        content="Contact Sagara Hydraulics for inquiries, consultations, and quotations. Call 071 680 3228 or visit us for your hydraulic needs.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            color: white;
-            border-radius: 5px;
-            font-family: inherit;
-        }
-
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            width: 100%;
-        }
-
-        .contact-info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-
-        .contact-info-item i {
-            width: 50px;
-            height: 50px;
-            background-color: rgba(0, 123, 255, 0.1);
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin-right: 20px;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-
-        .map-container {
-            width: 100%;
-            height: 300px;
-            background-color: #333;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-gray);
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Sagara <span>Hydraulics</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="applications.html">Applications</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/94716803228" class="contact-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> 071 680 3228
-            </a>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="logo-container">
+                <a href="./index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="./applications.html" class="nav-link">Applications</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/94716803228" target="_blank" class="btn btn-whatsapp contact-nav-btn">
+                    <i class="fab fa-whatsapp"></i> 071 680 3228
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="container section-padding">
-        <h1 class="section-title">Contact Us</h1>
+    <section class="section-padding reveal">
+        <div class="container">
+            <h1 class="section-title text-center">Get in Touch</h1>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 50px; color: var(--text-muted);">
+                Have a question or need a quotation? Reach out to us directly or fill out the form below.
+            </p>
 
-        <div class="contact-container">
-            <!-- Contact Info -->
-            <div>
-                <h3 style="color: white; margin-bottom: 30px; font-size: 1.5rem;">Get In Touch</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; align-items: start;">
+                <!-- Contact Info -->
+                <div class="product-card" style="padding: 30px;">
+                    <h3 style="margin-bottom: 20px;">Contact Information</h3>
+                    <ul style="display: flex; flex-direction: column; gap: 20px;">
+                        <li style="display: flex; gap: 15px; align-items: center;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--bg-surface-2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-phone" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">Phone</div>
+                                <div style="font-weight: 600;">071 680 3228</div>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 15px; align-items: center;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--bg-surface-2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fab fa-whatsapp" style="color: var(--success);"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">WhatsApp</div>
+                                <div style="font-weight: 600;">071 680 3228</div>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 15px; align-items: center;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--bg-surface-2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">Email</div>
+                                <div style="font-weight: 600;">contact@sagarahydraulics.lk</div>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 15px; align-items: center;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--bg-surface-2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">Location</div>
+                                <div style="font-weight: 600;">Sri Lanka</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                <div class="contact-info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <h4 style="color: white; margin-bottom: 5px;">Phone</h4>
-                        <p style="color: var(--text-gray);">071 680 3228</p>
+                <!-- Contact Form -->
+                <form class="product-card" style="padding: 30px;">
+                    <h3 style="margin-bottom: 20px;">Send us a specific inquiry</h3>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem;">Name</label>
+                        <input type="text" class="search-input" style="width: 100%; border: 1px solid var(--border);"
+                            placeholder="Your Name">
                     </div>
-                </div>
-
-                <div class="contact-info-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <h4 style="color: white; margin-bottom: 5px;">WhatsApp</h4>
-                        <p style="color: var(--text-gray);">071 680 3228</p>
-                        <a href="https://wa.me/94716803228"
-                            style="color: var(--primary-color); display: inline-block; margin-top: 5px;">Chat Now
-                            &rarr;</a>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem;">Phone</label>
+                        <input type="tel" class="search-input" style="width: 100%; border: 1px solid var(--border);"
+                            placeholder="Your Phone Number">
                     </div>
-                </div>
-
-                <div class="contact-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4 style="color: white; margin-bottom: 5px;">Email</h4>
-                        <p style="color: var(--text-gray);">contact@sagarahydraulics.lk</p>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem;">Message</label>
+                        <textarea class="search-input"
+                            style="width: 100%; border: 1px solid var(--border); resize: vertical; height: 120px;"
+                            placeholder="Tell us what you need..."></textarea>
                     </div>
-                </div>
-
-                <div class="map-container">
-                    <!-- Google Map Placeholder -->
-                    <p><i class="fas fa-map-marked-alt"></i> Google Map location will appear here</p>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div
-                style="background-color: var(--bg-card); padding: 30px; border-radius: 8px; border: 1px solid var(--border-color);">
-                <h3 style="color: white; margin-bottom: 20px;">Send us a Message</h3>
-                <form class="contact-form"
-                    onsubmit="event.preventDefault(); alert('Thank you for your message! We will contact you soon.');">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <input type="email" placeholder="Email Address">
-                    <textarea placeholder="How can we help you?" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="button" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
+                        Message</button>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 15px; text-align: center;">
+                        * This form is for demo purposes. Please contact via WhatsApp for immediate response.
+                    </p>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sagara Hydraulics. All Rights Reserved.</p>
+        <div class="container reveal">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sagara Hydraulics</h3>
+                    <p style="color: var(--text-muted);">Leading the way in industrial hydraulic solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./applications.html">Applications</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> 071 680 3228
+                        </li>
+                        <li><i class="fab fa-whatsapp" style="color: var(--success); margin-right: 10px;"></i> 071 680
+                            3228</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; <span id="current-year"></span> Sagara Hydraulics. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

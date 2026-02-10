@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagara Hydraulics | Industrial Hydraulic Solutions Sri Lanka</title>
+    <title>Sagara Hydraulics | Industrial Solutions Sri Lanka</title>
     <meta name="description"
-        content="Sagara Hydraulics is a leading supplier of hydraulic cylinders, pumps, valves, and maintenance services for industrial and mobile machinery in Sri Lanka.">
+        content="Premium hydraulic systems, cylinders, pumps, and maintenance services in Sri Lanka. Trusted engineering partner for industrial and mobile machinery.">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -22,186 +20,159 @@
     <!-- Header -->
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            <div class="logo-container">
+                <a href="./index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="applications.html">Applications</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="./index.html" class="nav-link active">Home</a></li>
+                    <li><a href="./shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="./applications.html" class="nav-link">Applications</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-            <a href="https://wa.me/94716803228" class="contact-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> 071 680 3228
-            </a>
-
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/94716803228" target="_blank" class="btn btn-whatsapp contact-nav-btn">
+                    <i class="fab fa-whatsapp"></i> 071 680 3228
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero reveal">
         <div class="container hero-content">
-            <h1>Reliable Hydraulic Solutions <br> for Industrial & Mobile Applications</h1>
-            <p>Your trusted partner for high-quality hydraulic systems, cylinders, pumps, and maintenance services in
+            <h1>Engineered for Power.<br>Built for Reliability.</h1>
+            <p>Your trusted partner for high-performance hydraulic systems, components, and maintenance services across
                 Sri Lanka.</p>
-            <div class="hero-buttons">
-                <a href="shop.html" class="btn btn-primary">Shop Now</a>
-                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="./shop.html" class="btn btn-primary">Browse Catalog</a>
+                <a href="./contact.html" class="btn btn-outline">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Why Choose Us</h2>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="product-card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-certificate"
+                        style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+                    <h3>Quality Assurance</h3>
+                    <p style="color: var(--text-muted);">We supply only genuine, high-durability parts ensuring
+                        long-term performance.</p>
+                </div>
+                <div class="product-card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-tools" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+                    <h3>Expert Service</h3>
+                    <p style="color: var(--text-muted);">Over 10 years of experience in hydraulic system design, repair,
+                        and maintenance.</p>
+                </div>
+                <div class="product-card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-shipping-fast"
+                        style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+                    <h3>Fast Delivery</h3>
+                    <p style="color: var(--text-muted);">Island-wide delivery and quick turnaround for breakdown
+                        support.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Products -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/cylinder.jpg" alt="Hydraulic Cylinder"
-                            onerror="this.style.display='none'">
-                        <div
-                            style="color: #666; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; position: absolute; z-index: -1;">
-                            No Image</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Hydraulic Cylinders</h3>
-                        <p class="product-desc">Heavy-duty double acting cylinders for construction machinery.</p>
-                        <a href="https://wa.me/94716803228?text=I am interested in Hydraulic Cylinders"
-                            class="btn btn-outline" style="width: 100%; text-align: center;">Inquire Now</a>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/pump.jpg" alt="Hydraulic Pump" onerror="this.style.display='none'">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Hydraulic Pumps</h3>
-                        <p class="product-desc">High-efficiency gear and piston pumps for industrial use.</p>
-                        <a href="https://wa.me/94716803228?text=I am interested in Hydraulic Pumps"
-                            class="btn btn-outline" style="width: 100%; text-align: center;">Inquire Now</a>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/valve.jpg" alt="Control Valve" onerror="this.style.display='none'">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Control Valves</h3>
-                        <p class="product-desc">Precision directional control valves for mobile machines.</p>
-                        <a href="https://wa.me/94716803228?text=I am interested in Control Valves"
-                            class="btn btn-outline" style="width: 100%; text-align: center;">Inquire Now</a>
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/hose.jpg" alt="Hydraulic Hose" onerror="this.style.display='none'">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Hoses & Fittings</h3>
-                        <p class="product-desc">Durable high-pressure hoses and crimped fittings.</p>
-                        <a href="https://wa.me/94716803228?text=I am interested in Hoses and Fittings"
-                            class="btn btn-outline" style="width: 100%; text-align: center;">Inquire Now</a>
-                    </div>
-                </div>
+    <section class="section-padding" style="background: var(--bg-surface-2);">
+        <div class="container reveal">
+            <div class="text-center">
+                <h2 class="section-title">Featured Products</h2>
+            </div>
+            <div class="product-grid" id="featured-grid" style="margin-top: 40px;">
+                <!-- Filled by JS -->
             </div>
             <div class="text-center" style="margin-top: 40px;">
-                <a href="shop.html" class="btn btn-primary">View All Products</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section-padding" style="background-color: var(--bg-card);">
-        <div class="container">
-            <h2 class="section-title">Why Choose Sagara Hydraulics?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-industry feature-icon"></i>
-                    <h3 class="feature-title">Expert Engineering</h3>
-                    <p style="color: var(--text-gray);">Over 10 years of experience in hydraulic system design and
-                        maintenance.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-check-circle feature-icon"></i>
-                    <h3 class="feature-title">Quality Assurance</h3>
-                    <p style="color: var(--text-gray);">We only supply genuine, high-durability parts for ensuring
-                        longevity.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shipping-fast feature-icon"></i>
-                    <h3 class="feature-title">Fast Service</h3>
-                    <p style="color: var(--text-gray);">Quick breakdown support and island-wide delivery services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Contact -->
-    <section class="section-padding">
-        <div class="container text-center">
-            <h2 class="section-title">Need Hydraulic Support?</h2>
-            <p style="color: var(--text-gray); margin-bottom: 30px; font-size: 1.1rem;">Contact us today for a free
-                consultation or quotation.</p>
-            <div style="display: flex; gap: 20px; justify-content: center;">
-                <a href="tel:0716803228" class="btn btn-primary"><i class="fas fa-phone"></i> Call 071 680 3228</a>
-                <a href="https://wa.me/94716803228" class="btn" style="background-color: #25D366; color: white;"><i
-                        class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="./shop.html" class="btn btn-outline">View All Products</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container reveal">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Sagara Hydraulics</h3>
-                    <p style="color: var(--text-gray);">Your trusted partner for industrial and mobile hydraulic
-                        solutions in Sri Lanka.</p>
+                    <p style="color: var(--text-muted);">Leading the way in industrial hydraulic solutions. Providing
+                        power, precision, and performance.</p>
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="applications.html">Applications</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./applications.html">Applications</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-phone" style="color: var(--primary-color); margin-right: 10px;"></i> 071
-                            680 3228</li>
-                        <li><i class="fab fa-whatsapp" style="color: var(--primary-color); margin-right: 10px;"></i> 071
-                            680 3228</li>
-                        <li><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 10px;"></i>
+                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> 071 680 3228
+                        </li>
+                        <li><i class="fab fa-whatsapp" style="color: var(--success); margin-right: 10px;"></i> 071 680
+                            3228</li>
+                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i>
                             contact@sagarahydraulics.lk</li>
-                        <li><i class="fas fa-map-marker-alt"
-                                style="color: var(--primary-color); margin-right: 10px;"></i> Sri Lanka</li>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Sri
+                            Lanka</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sagara Hydraulics. All Rights Reserved.</p>
+            <div class="copy">
+                <p>&copy; <span id="current-year"></span> Sagara Hydraulics. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Inline script to load featured products (first 4)
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('featured-grid');
+            if (grid && typeof products !== 'undefined') {
+                const featured = products.slice(0, 4);
+                featured.forEach(product => {
+                    const card = document.createElement('div');
+                    card.className = 'product-card reveal active'; // Changed to include active
+                    card.innerHTML = `
+                        <div class="product-img">
+                            <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x220?text=No+Image'">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat">${product.category}</div>
+                            <h3 class="product-title">${product.name}</h3>
+                            <p class="product-desc">${product.description.substring(0, 60)}...</p>
+                            <a href="./product.html?id=${product.id}" class="btn btn-outline" style="width: 100%; justify-content: center;">View Details</a>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
