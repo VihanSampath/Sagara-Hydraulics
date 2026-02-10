@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Sagara Hydraulics</title>
+    <meta name="description"
+        content="Browse our wide range of hydraulic products including cylinders, pumps, valves, seals, and power units. High quality industrial parts in Sri Lanka.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .shop-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .sidebar {
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            height: fit-content;
+        }
+
+        .filter-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: white;
+        }
+
+        .category-list li {
+            margin-bottom: 10px;
+        }
+
+        .category-list a {
+            display: block;
+            padding: 8px 10px;
+            color: var(--text-gray);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .category-list a:hover,
+        .category-list a.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .shop-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/94716803228" class="contact-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> 071 680 3228
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <h1 class="section-title">Our Products</h1>
+
+        <div class="shop-layout">
+            <aside class="sidebar">
+                <h3 class="filter-title">Categories</h3>
+                <ul class="category-list">
+                    <li><a class="category-filter active" data-category="all">All Products</a></li>
+                    <li><a class="category-filter" data-category="cylinders">Hydraulic Cylinders</a></li>
+                    <li><a class="category-filter" data-category="pumps">Hydraulic Pumps</a></li>
+                    <li><a class="category-filter" data-category="valves">Hydraulic Valves</a></li>
+                    <li><a class="category-filter" data-category="seals">Hydraulic Seals</a></li>
+                    <li><a class="category-filter" data-category="power-units">Power Units</a></li>
+                    <li><a class="category-filter" data-category="hoses">Hoses & Fittings</a></li>
+                    <li><a class="category-filter" data-category="custom">Custom Systems</a></li>
+                    <li><a class="category-filter" data-category="parts">Spare Parts</a></li>
+                </ul>
+            </aside>
+
+            <main id="shop-grid" class="product-grid">
+                <!-- Products will be loaded here by JS -->
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sagara Hydraulics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+
+</html>

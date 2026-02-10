@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sagara Hydraulics</title>
+    <meta name="description"
+        content="Contact Sagara Hydraulics for inquiries, consultations, and quotations. Call 071 680 3228 or visit us for your hydraulic needs.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: white;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            width: 100%;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-item i {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Sagara <span>Hydraulics</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/94716803228" class="contact-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> 071 680 3228
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <h1 class="section-title">Contact Us</h1>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div>
+                <h3 style="color: white; margin-bottom: 30px; font-size: 1.5rem;">Get In Touch</h3>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 5px;">Phone</h4>
+                        <p style="color: var(--text-gray);">071 680 3228</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 5px;">WhatsApp</h4>
+                        <p style="color: var(--text-gray);">071 680 3228</p>
+                        <a href="https://wa.me/94716803228"
+                            style="color: var(--primary-color); display: inline-block; margin-top: 5px;">Chat Now
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 5px;">Email</h4>
+                        <p style="color: var(--text-gray);">contact@sagarahydraulics.lk</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Google Map Placeholder -->
+                    <p><i class="fas fa-map-marked-alt"></i> Google Map location will appear here</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+                style="background-color: var(--bg-card); padding: 30px; border-radius: 8px; border: 1px solid var(--border-color);">
+                <h3 style="color: white; margin-bottom: 20px;">Send us a Message</h3>
+                <form class="contact-form"
+                    onsubmit="event.preventDefault(); alert('Thank you for your message! We will contact you soon.');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address">
+                    <textarea placeholder="How can we help you?" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sagara Hydraulics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
