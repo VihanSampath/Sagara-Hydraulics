@@ -117,15 +117,14 @@ header {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
-    color: var(--primary-color);
+.logo-img {
+    height: 100px;
+    /* Adjust based on logo aspect ratio */
+    width: auto;
 }
 
 .nav-links {
@@ -389,16 +388,19 @@ footer {
         /* Hide header CTA on mobile to save space, rely on mobile menu or hero */
     }
 
-
-
-    /* Scroll Reveal Animation */
-    .reveal {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
+    .logo-img {
+        height: 60px;
     }
+}
 
-    .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
