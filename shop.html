@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Sagara Hydraulics</title>
     <meta name="description"
-        content="Browse our catalog of hydraulic cylinders, pumps, valves, and hoses. High quality industrial components availability.">
+        content="Browse our wide range of hydraulic products including cylinders, pumps, valves, seals, and power units. High quality industrial parts in Sri Lanka.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -43,7 +43,7 @@
     </header>
 
     <!-- Shop Hero -->
-    <section class="hero reveal" style="height: 40vh;">
+    <section class="hero reveal active" style="height: 40vh;">
         <div class="container hero-content">
             <h1>Our Products</h1>
             <p>Comprehensive range of hydraulic components for every application.</p>
@@ -167,7 +167,7 @@
 
                 filtered.forEach(product => {
                     const card = document.createElement('div');
-                    card.className = 'product-card reveal active'; // Changed to include active
+                    card.className = 'product-card reveal active'; // Ensure visible immediately
                     card.innerHTML = `
                          <div class="product-img">
                             <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x220?text=No+Image'">
