@@ -22,6 +22,8 @@
         <div class="container navbar">
             <div class="logo-container">
                 <a href="./index.html" class="logo">Sagara <span>Hydraulics</span></a>
+                <!-- Uncomment below line to use image logo -->
+                <!-- <a href="./index.html"><img src="./assets/images/logo.png" alt="Sagara Hydraulics" class="logo-img"></a> -->
             </div>
 
             <nav>
@@ -48,7 +50,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero reveal">
+    <section class="hero reveal active">
         <div class="container hero-content">
             <h1>Engineered for Power.<br>Built for Reliability.</h1>
             <p>Your trusted partner for high-performance hydraulic systems, components, and maintenance services across
@@ -156,7 +158,7 @@
                 const featured = products.slice(0, 4);
                 featured.forEach(product => {
                     const card = document.createElement('div');
-                    card.className = 'product-card reveal active'; // Changed to include active
+                    card.className = 'product-card reveal active'; // Ensure visible immediately
                     card.innerHTML = `
                         <div class="product-img">
                             <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x220?text=No+Image'">
